@@ -20,6 +20,10 @@
         <activity android:name=".ParkActivity">
 
         </activity>
+
+        <activity android:name=".HospitalActivity">
+
+        </activity>
     </application>
 
 </manifest>
