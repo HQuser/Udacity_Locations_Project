@@ -22,7 +22,6 @@
 
     <!-- location_list.xml TextViews background-->
     <style name="TextViewLocation">
-        <!-- In format of AARRGGBB with Alpha value of 70% -->
         <item name="android:textColor">@android:color/white</item>
     </style>
 
@@ -37,5 +36,20 @@
 
     <!-- Brown background with alpha value of 70% -->
     <color name="alpha_brown">#B33E2723</color>
+
+    <!-- Tab Layout Style -->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimaryInverse</item>
+        <item name="tabBackground">?attr/colorPrimary</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondaryInverse</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
 
 </resources>
