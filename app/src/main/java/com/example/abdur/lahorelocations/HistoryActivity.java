@@ -18,9 +18,9 @@ public class HistoryActivity extends AppCompatActivity {
 
         // List of locations
         ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("Jallo Park", R.drawable.jallo_park, "Jallo Park (sometimes called Jallo Wildlife Park), established in 1978, is a public recreation and wildlife site located in Lahore District, Punjab, Pakistan. "));
-        locations.add(new Location("Botnical Park", R.drawable.botnical_park, "Botnical Park (sometimes called Jallo Wildlife Park), established in 1978, is a public recreation and wildlife site located in Lahore District, Punjab, Pakistan. "));
-        locations.add(new Location("Shalimar Park", R.drawable.shalimar_park, "Shalimar Park (sometimes called Jallo Wildlife Park), established in 1978, is a public recreation and wildlife site located in Lahore District, Punjab, Pakistan. "));
+        locations.add(new Location("Lahore Museum", R.drawable.lahore_museum, "he Lahore Museum (Punjabi: لاہور میوزیم, Urdu: لاہور عجائب گھر\u200E), was originally established in 1865-66 on the site of the hall or building of the 1864 Punjab Exhibition"));
+        locations.add(new Location("Science & Technology Museum", R.drawable.science_and_technology_museum, "(NMST) National museum of science & Technology is a non-profit, permanent institution in the service of society and its development, open to the public"));
+        locations.add(new Location("Fakir Khana Museum", R.drawable.fakir_khanna_museum, "Fakir Khana is the private museum of the Fakir Family of Lahore."));
 
 
         // Setting up ListView and adding adapter

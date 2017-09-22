@@ -28,6 +28,10 @@
         <activity android:name=".RestaurantActivity">
 
         </activity>
+
+        <activity android:name=".HistoryActivity">
+
+        </activity>
     </application>
 
 </manifest>
