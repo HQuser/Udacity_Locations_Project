@@ -3,6 +3,7 @@ package com.example.abdur.lahorelocations;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,8 +19,11 @@ import java.util.ArrayList;
 
 public class LocationsAdapter extends ArrayAdapter<Location> {
 
-    public LocationsAdapter(@NonNull Context context, @NonNull ArrayList<Location> objects) {
+    private int mBackgroundColor;
+
+    public LocationsAdapter(@NonNull Context context, @NonNull ArrayList<Location> objects, @NonNull int backgroundColor) {
         super(context, 0, objects);
+        mBackgroundColor = ContextCompat.getColor(getContext(), backgroundColor);
     }
 
     @NonNull
@@ -41,6 +45,7 @@ public class LocationsAdapter extends ArrayAdapter<Location> {
 
         TextView descriptionTextView = (TextView) rootView.findViewById(R.id.location_description_text_view);
         descriptionTextView.setText(location.getLocationAddress());
+        descriptionTextView.setBackgroundColor(mBackgroundColor);
 
         return rootView;
     }

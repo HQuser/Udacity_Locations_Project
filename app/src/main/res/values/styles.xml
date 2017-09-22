@@ -23,7 +23,19 @@
     <!-- location_list.xml TextViews background-->
     <style name="TextViewLocation">
         <!-- In format of AARRGGBB with Alpha value of 70% -->
-        <item name="android:background">#B333691E</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
+
+    <!-- Green Background with alpha value of 70% -->
+    <color name="alpha_green">#B333691E</color>
+
+    <!-- Red Background with alpha value of 70% -->
+    <color name="alpha_red">#B3BF360C</color>
+
+    <!-- Sky Blue background with alpha value of 70%-->
+    <color name="alpha_sky_blue">#B3006064</color>
+
+    <!-- Brown background with alpha value of 70% -->
+    <color name="alpha_brown">#B33E2723</color>
+
 </resources>

@@ -25,6 +25,6 @@ public class HospitalActivity extends AppCompatActivity {
 
         // Setting up ListView and adding adapter
         ListView listView = (ListView) findViewById(R.id.list_view);
-        listView.setAdapter(new LocationsAdapter(this, locations));
+        listView.setAdapter(new LocationsAdapter(this, locations, R.color.alpha_sky_blue));
     }
 }
