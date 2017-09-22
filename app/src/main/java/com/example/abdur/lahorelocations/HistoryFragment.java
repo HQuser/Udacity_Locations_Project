@@ -1,20 +1,30 @@
 package com.example.abdur.lahorelocations;
 
+
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 /**
- * Created by Abdur on 21-Sep-17.
+ * A simple {@link Fragment} subclass.
  */
+public class HistoryFragment extends Fragment {
 
-public class HistoryActivity extends AppCompatActivity {
+
+    public HistoryFragment() {
+        // Required empty public constructor
+    }
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_view);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = LayoutInflater.from(getActivity()).inflate(R.layout.list_view, container, false);
 
         // List of locations
         ArrayList<Location> locations = new ArrayList<>();
@@ -24,7 +34,9 @@ public class HistoryActivity extends AppCompatActivity {
 
 
         // Setting up ListView and adding adapter
-        ListView listView = (ListView) findViewById(R.id.list_view);
-        listView.setAdapter(new LocationsAdapter(this, locations, R.color.alpha_brown));
+        ListView listView = (ListView) rootView.findViewById(R.id.list_view);
+        listView.setAdapter(new LocationsAdapter(getActivity(), locations, R.color.alpha_brown));
+
+        return rootView;
     }
 }

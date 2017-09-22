@@ -17,21 +17,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ParkActivity">
-
-        </activity>
-
-        <activity android:name=".HospitalActivity">
-
-        </activity>
-
-        <activity android:name=".RestaurantActivity">
-
-        </activity>
-
-        <activity android:name=".HistoryActivity">
-
-        </activity>
     </application>
 
 </manifest>
